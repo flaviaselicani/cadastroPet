@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Pet</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f854a39c43.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/logo.svg" alt="Logo Espaço Pet" class="cabecalho-img">
+        <nav class="cabecalho-menu">
+            <a href="">Cães</a>
+            <a href="">Gatos</a>
+            <a href="">Peixes</a>
+            <a href="">Passarinhos</a>
+            <a href="">Todas as Categorias</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="sec-indice">
+           <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="">Minha Conta</a></li>
+                <li><span>-</span></li>
+                <li><a href=""><strong>Cadastro Pet</strong></a></li>
+           </ul>
+        </section>
+        <section class="sec-form">
+            <div class="form-profile">
+                    <input type="file" name="imagem" accept="image/*">
+                    <span>Adicionar foto</span>
+            </div>
+            <div class="form-add">
+                <form action="">
+                    <h1>Adicionar Pet</h1>
+                    <div class="form-content">
+                        <div class="form-content-especie">
+                            <div class="form-content-item-especie-p">
+                                <p>Qual a espécie do seu pet?</p>
+                            </div>
+                            <div class="form-content-itens">
+                                <div class="form-content-item-especie">
+                                    <label for="">
+                                        <input type="radio" checked>
+                                        <span class="fa-solid fa-dog"></span>
+                                        Cão
+                                    </label>
+                                </div>
+                                <div class="form-content-item-especie">
+                                    <label for="">
+                                        <input type="radio">
+                                        <span class="fa-solid fa-cat"></span>
+                                        Gato
+                                    </label>
+                                </div>
+                                <div class="form-content-item-especie">
+                                    <label for="">
+                                        <input type="radio">
+                                        <span class="fa-solid fa-fish"></span>
+                                        Peixe
+                                    </label>
+                                </div>
+                                <div class="form-content-item-especie">    
+                                    <label for="">
+                                        <input type="radio">
+                                        <span class="fa-solid fa-crow"></span>
+                                        Pássaro
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-content-item-info">
+                            <label for="nome">Nome
+                                <input type="text">
+                            </label>
+                            <label for="raca">Escolha a raça do cachorro:
+                                <select id="raca" name="raca">
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="srd">SRD (Sem Raça Definida)</option>
+                                    <option value="beagle">Beagle</option>
+                                    <option value="border-collie">Border Collie</option>
+                                    <option value="bulldog">Bulldog Inglês</option>
+                                    <option value="chihuahua">Chihuahua</option>
+                                    <option value="golden">Golden Retriever</option>
+                                    <option value="husky">Husky Siberiano</option>
+                                    <option value="labrador">Labrador Retriever</option>
+                                    <option value="pastor-alemao">Pastor Alemão</option>
+                                    <option value="poodle">Poodle</option>
+                                    <option value="rottweiler">Rottweiler</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </label>
+                            <label for="genero">Gênero
+                                <select name="genero" id="">
+                                    <option value="">Selecione o gênero</option>
+                                    <option value="femea">Fêmea</option>
+                                    <option value="macho">Macho</option>
+                                </select>
+                            </label>
+                            <label for="castrado">Cão castrado(a)?
+                                <select name="castrado" id="">
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </label>
+                            <label for="nascimento">Selecione a data de nascimento
+                                <input type="date">
+                            </label>
+                        </div>
+                        <button>Salvar</button>            
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="" alt="Logo Espaço Pet">
+        <p>&copy; Espaço Pet - 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

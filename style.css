@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background-color: #eeeeee;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: #FFD97D;
+}
+.cabecalho-img {
+    height: 3em;
+    cursor: pointer;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 1.5em;
+}
+.cabecalho-menu a {
+    color: #2a784e;
+}
+.cabecalho-menu a:hover {
+    font-weight: 600;
+}
+main {
+    margin: 2em;
+}
+.sec-indice ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5em;
+}
+.sec-indice li {
+    list-style-type: none;
+    padding-right: 1em;
+}
+.sec-indice a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+.sec-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-profile {
+    padding: 1em;
+}
+.form-add {
+    font-size: 18px;
+    padding: 3em;
+    border: 1px solid #dbdbdb;
+}
+.form-add h1 {
+    padding-bottom: 1em;
+    color: #2a784e;
+}
+.form-content-itens {
+    display: flex;
+    flex-direction: row;
+}
+.form-content-itens, .form-content-item-info {
+    padding: 0.5em;
+}
+.form-content-itens p {
+    padding-bottom: 0.5em;
+}
+.form-content-itens label {
+    padding: 0.5em;
+}
+.form-content-item-especie input[type="radio"] {
+    display: none;
+}
+.form-content-item-especie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    color: #aaa;
+    font-weight: bold;
+    text-align: center;
+}
+.form-content-item-especie input[type="radio"]:checked + .form-content-item-especie {
+    border-color: #6a1b9a;
+    color: #6a1b9a;
+  }
